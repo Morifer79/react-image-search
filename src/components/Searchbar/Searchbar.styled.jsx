@@ -9,7 +9,7 @@ export const Header = styled.header`
   width: 100%;
   text-align: center;
 
-  :is(:before, :after) {
+  /*:is(:before, :after) {
     content: '';
     display: block;
     height: 1px;
@@ -17,18 +17,32 @@ export const Header = styled.header`
     margin: 0 0 0 -400px;
     position: absolute;
     width: 800px;
-  }
+  }*/
 
   :before {
     content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+    width: 800px;
+    background: #444;
     background: linear-gradient(left, #151515, #444, #151515);
-    top: 46px;
+    top: 45px;
   }
 
   :after {
     content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    position: absolute;
+    width: 800px;
+    background: #000;
     background: linear-gradient(left, #151515, #000, #151515);
-    top: 45px;
+    top: 44px;
   }
 `;
 

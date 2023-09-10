@@ -60,7 +60,8 @@ export class App extends React.Component {
       const data = await Request.fetchGallery(searchValues, page);
 
       if (data.hits.length === 0) {
-        toast.error('No pictures - no problem');
+				toast.error('No pictures - no problem');
+				return;
       }
 
       const normalImages = Request.destImages(data.hits);

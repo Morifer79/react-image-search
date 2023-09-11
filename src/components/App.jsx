@@ -95,8 +95,7 @@ export class App extends React.Component {
         {images.length > 0 && totalPages !== page && !isLoading && (
           <Button onClick={this.loadMoreImages} />
         )}
-        {/*{(totalPages === page) > 0 && toast.error('You have reached Mars!')}*/}
-        {images.length > 0 && !isLoading && <ScrollToTop />}
+        {images.length > 36 && !isLoading && <ScrollToTop />}
         <ModalStyled
           isOpen={isModal}
           onRequestClose={this.closeModal}
